@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1937a61-3ae7-4aed-a1a1-50d613db07dc" name="Changes" comment="Commit message">
-      <change afterPath="$PROJECT_DIR$/server/src/prisma.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/auth/dto/auth.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/auth/strategies/jwt.strategies.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/config/jwt.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/app.controller.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/app.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/prisma.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/prisma.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/server/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/app.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +93,7 @@
       <workItem from="1779178528655" duration="89000" />
       <workItem from="1779178713522" duration="186000" />
       <workItem from="1779178931923" duration="11787000" />
-      <workItem from="1779190882781" duration="2483000" />
+      <workItem from="1779190882781" duration="5565000" />
     </task>
     <task id="LOCAL-00001" summary="Commit message">
       <option name="closed" value="true" />
@@ -117,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779191025384</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Commit message">
+      <option name="closed" value="true" />
+      <created>1779193384537</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1779193384537</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

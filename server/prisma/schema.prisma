@@ -1,6 +1,7 @@
 generator client {
   provider = "prisma-client"
   output   = "../generated/prisma"
+  moduleFormat = "cjs"
 }
 
 datasource db {
@@ -18,7 +19,7 @@ model User {
   orders    Order[]
   favorites Product[]
   reviews   Review[]
-  store     Store[]
+  stores     Store[]
 
   @@map("user")
 }
