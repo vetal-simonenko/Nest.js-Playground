@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1937a61-3ae7-4aed-a1a1-50d613db07dc" name="Changes" comment="Commit message">
-      <change afterPath="$PROJECT_DIR$/server/src/auth/dto/auth.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/auth/strategies/jwt.strategies.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/config/jwt.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/auth/decorators/auth.decorators.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/auth/guards/jwt-auth.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/auth/strategies/google.strategy.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/prisma.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/prisma.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/server/prisma/schema.prisma" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/auth/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/auth/auth.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/auth/auth.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/auth/auth.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/auth/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/auth/strategies/jwt.strategies.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/auth/strategies/jwt.strategies.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/user/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/user/user.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/user/user.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +43,12 @@
     &quot;accountId&quot;: &quot;b59e729f-3e3a-47f2-a416-9ecfbd084f7f&quot;
   }
 }</component>
+  <component name="HttpClientOnboardingState"><![CDATA[{
+  "isOnboardingCommentShown": true
+}]]></component>
+  <component name="HttpClientSelectedEnvironments">
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http" environment="test" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 8
@@ -53,6 +60,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "HTTP Request.api | #1.executor": "Run",
+    "HTTP Request.api | Send POST request with body as parameters.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -72,6 +81,45 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunAnythingCache">
+    <myKeys>
+      <visibility group="Grunt" flag="true" />
+      <visibility group="Gulp" flag="true" />
+      <visibility group="Recent projects" flag="true" />
+      <visibility group="Run Configurations" flag="true" />
+      <visibility group="npm" flag="true" />
+      <visibility group="pnpm" flag="true" />
+      <visibility group="yarn" flag="true" />
+    </myKeys>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationStatuses">
+      <map>
+        <entry key="HttpClient.HttpRequestRunConfigurationType">
+          <value>
+            <map>
+              <entry key="api | #1" value="STOPPED" />
+              <entry key="api | Send POST request with body as parameters" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="HTTP Request.api | Send POST request with body as parameters">
+    <configuration name="api | Send POST request with body as parameters" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/server/api.http" executionIdentifier="Send POST request with body as parameters" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="api | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/server/api.http" executionIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.api | Send POST request with body as parameters" />
+        <item itemvalue="HTTP Request.api | #1" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -93,7 +141,8 @@
       <workItem from="1779178528655" duration="89000" />
       <workItem from="1779178713522" duration="186000" />
       <workItem from="1779178931923" duration="11787000" />
-      <workItem from="1779190882781" duration="5565000" />
+      <workItem from="1779190882781" duration="11664000" />
+      <workItem from="1779202686264" duration="1894000" />
     </task>
     <task id="LOCAL-00001" summary="Commit message">
       <option name="closed" value="true" />
@@ -127,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779193384537</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Commit message">
+      <option name="closed" value="true" />
+      <created>1779196487875</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1779196487875</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -9,8 +9,8 @@ export class UserService {
 
   async getById(id: string) {
     return this.prisma.user.findUnique({
-      where: { id: id },
-      select: {
+      where: { id },
+      include: {
         stores: true,
         favorites: true,
         orders: true,
@@ -21,7 +21,7 @@ export class UserService {
   async getByEmail(email: string) {
     return this.prisma.user.findUnique({
       where: { email },
-      select: {
+      include: {
         stores: true,
         favorites: true,
         orders: true,
